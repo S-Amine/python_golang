@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  python-golang:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-golang:3.10.11-20.3-slim-buster
+    container_name: python-golang
+    tty: true
